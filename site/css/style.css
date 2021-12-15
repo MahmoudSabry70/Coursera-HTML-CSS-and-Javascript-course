@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: rgb(253, 253, 253);
+}
+
+img {
+  width: 200px;
+  background-color: white;
+}
+
+.first-all,
+.second-all {
+  border-style: solid;
+}
+/* .first-word {
+  float: right;
+} */
+
+.second-all {
+  display: table;
+  width: 99.5%;
+}
+
+.second-photo {
+  float: right;
+}
+
+.static {
+  position: sticky;
+  top: 0;
+}
