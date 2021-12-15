@@ -1,101 +1,129 @@
-body {
-  background-image: url("../imge/d9ff6536-a54a-4f1b-b1ed-9859b0b7d9ec.jfif");
-  margin: 0%;
-  font-family: Arial, Helvetica, sans-serif;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair+Display:ital',sans-serif;
 }
-.my-border {
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.my-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 580px;
-  background-color: rgba(0, 0, 0, 0.789);
-}
-fieldset {
-  border: 1px solid white;
-  padding: 30px;
-  color: white;
-  position: sticky;
-  width: 70%;
-  height: 80%;
-}
-h1 {
-  color: white;
-  margin-top: 10px;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../imgs/4.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
 }
 
-.block-lable {
-  display: block;
-  font-size: 1.2rem;
-  margin-bottom: 0.51rem;
-  margin-top: 1rem;
-  width: 35%;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    
+
 }
-input {
-  font-size: 1rem;
-  padding: 4px;
-  border: none;
-  width: 100%;
+.container .card {
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    box-shadow: 20px 20px 50px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    border-top:2px solid rgb(248,248, 248 , .5);
+
+    backdrop-filter: blur(5px);
 }
 
-textarea:focus,
-input:focus {
-  outline: none;
+.content{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content h1 {
+    color: rgb(245, 244, 244,.8);
+    text-shadow: 2px 2px 5px black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+.form-input{
+    width: 100%;
+    height: 100%;
 }
 
-#sign-in-btn {
-  display: block;
-  font-size: 14px;
-  padding: 10px;
-  width: 80%;
-  border-radius: 20px;
-  margin: 20px;
-  position: relative;
-  right: -5%;
 
-  background-color: rgb(184, 6, 9);
-  color: white;
-  border: none;
-  cursor: pointer;
+.text-field{
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    margin:15px auto 15px; 
+    border-radius: 15px;
+    
+    border: none;
+    font-size: 17px;
 }
-
-#sign-in-btn:hover {
-  background-color: rgb(104, 109, 104);
-  color: black;
+textarea:focus, input:focus{
+    outline: none;
 }
 
-.link {
-  display: block;
-  text-decoration: none;
-  margin: 5px;
+.checkbox{
+    margin:5px auto 25px; 
+    
+
 }
-a {
-  color: white;
-  text-decoration: none;
-  margin: 5px;
-  position: relative;
-  right: 80px;
-  display: block;
-}
-.link a {
-  color: white;
-  text-decoration: none;
-  margin: 5px;
-  position: relative;
-  right: 89px;
-  display: block;
+.form-button{
+    width: 100%;
+    height: 100%;
 }
 
-a:hover {
-  color: rgb(197, 12, 12);
+.form-button button{
+    font-size: 18px;
+    padding: 12px;
+    background-color: rgb(5, 5, 5,.5);
+    width: 70%;
+    height: 40px;
+    margin:10px auto 20px; 
+    
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    color: rgb(255, 255, 255,.9);
+    align-content: center;
 }
+.form-button button:hover{
+    border:2px solid rgb(248,248, 248 , .5);
+    color: black;
+}
+
+@media(max-width: 800px){
+    .container.card{
+        width: 60vw;
+    }
+}
+@media(max-width: 600px){
+    .container.card{
+        width: 90vw;
+    }
+}
+@media(max-width: 400px){
+    .container.card{
+        width: 95vw;
+    }
+}
+
+
+
+
+
+
+
